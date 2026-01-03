@@ -1,16 +1,50 @@
-# space_app
+# 🚀 Space App
 
-A new Flutter project.
+**Space App** is an interactive Flutter application that showcases the planets of the solar system and provides detailed information about each planet.  
+The app also features an interactive **3D planet view**, allowing users to rotate and explore planets in a realistic and engaging way.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🌌 Features
+- Display all planets in the solar system
+- Detailed information for each planet:
+  - Name
+  - Size
+  - Distance from the Sun
+- Interactive **3D planet models** with rotation support
+- Clean and modern user interface
+- Cross-platform support (**Android & iOS**)
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🛠️ Technologies Used
+- **Flutter**
+- **Dart**
+- Custom UI Widgets
+- 3D rendering using Flutter packages such as:
+  - `model_viewer_plus`
+  - `flutter_3d_controller`
+  - or any other 3D Flutter package used in the project
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 📱 Screens
+- **Home Screen** – Displays all planets
+- **Planet Details Screen** – Shows detailed planetary information
+- **3D Planet Viewer** – Interactive planet rotation and exploration
+
+---
+
+## ▶️ Getting Started
+
+### Prerequisites
+- Flutter SDK
+- Android Studio or Visual Studio Code
+- Emulator or physical device
+
+### Installation
+```bash
+git clone https://github.com/your-username/space_app.git
+cd space_app
+flutter pub get
+flutter run
