@@ -11,4 +11,5 @@ abstract final class Assetsmanger {
   static const String uranus = "assets/images/uranus.png";
   static const String venus = "assets/images/venus.png";
   static const String forward_ic = "assets/icons/forward.svg";
+  static const String backward_ic = "assets/icons/backward.svg";
 }
