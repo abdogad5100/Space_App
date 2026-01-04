@@ -5,8 +5,9 @@ import '../resources/AssetsManger.dart';
 
 class Redbtn extends StatelessWidget {
   final String title;
+  final VoidCallback onPressed;
 
-  const Redbtn({super.key, required this.title});
+  const Redbtn({super.key, required this.title, required this.onPressed});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +15,7 @@ class Redbtn extends StatelessWidget {
       width: double.infinity,
       height: 56,
       child: ElevatedButton(
-        onPressed: () {},
+        onPressed: onPressed,
         style: ElevatedButton.styleFrom(
           backgroundColor: Colors.red,
           shape: RoundedRectangleBorder(
