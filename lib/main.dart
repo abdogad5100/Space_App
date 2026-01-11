@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:space_app/home_page.dart';
-import 'package:space_app/planets_page.dart';
+import 'package:space_app/ui/home_page.dart';
+import 'package:space_app/ui/planets_page.dart';
 
 void main() {
   runApp(const MyApp());

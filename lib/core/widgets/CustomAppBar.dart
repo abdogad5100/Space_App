@@ -1,7 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:space_app/core/resources/AssetsManger.dart';
 
-class Customappbarr extends StatelessWidget {
+class CustomAppBar extends StatelessWidget {
+  final String title;
+  final String body;
+  final Alignment bodyAlignment;
+
+  const CustomAppBar({
+    super.key,
+    required this.title,
+    required this.body,
+    this.bodyAlignment = Alignment.bottomLeft,
+  });
+
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -25,13 +36,14 @@ class Customappbarr extends StatelessWidget {
             ),
           ),
 
-          Positioned(
-            top: MediaQuery.of(context).padding.top + 20,
-            left: 0,
-            right: 0,
-            child: const Center(
+          Align(
+            alignment: Alignment.topCenter,
+            child: Padding(
+              padding: EdgeInsets.only(
+                top: MediaQuery.of(context).padding.top + 15,
+              ),
               child: Text(
-                "Explore",
+                title,
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 24,
@@ -41,14 +53,15 @@ class Customappbarr extends StatelessWidget {
             ),
           ),
 
-          Positioned(
-            bottom: 24,
-            left: 16,
-            child: SizedBox(
-              width: 300,
+          Align(
+            alignment: bodyAlignment,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(
+                horizontal: 16.0,
+                vertical: 8,
+              ),
               child: Text(
-                '''Which planet
-would you like to explore?''',
+                body,
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 24,
